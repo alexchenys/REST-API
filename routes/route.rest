@@ -1,0 +1,24 @@
+GET http://localhost:8080/subscribers
+###
+GET http://localhost:8080/subscribers/5e8778dd58d52d22d44dcf81
+
+###
+POST http://localhost:8080/subscribers
+Content-Type: application/json
+
+{
+    "name": "Alex",
+    "subscriberToChannel": "CCNA"
+}
+
+###
+DELETE http://localhost:8080/subscribers/5e8778dd58d52d22d44dcf81
+
+###
+PATCH  http://localhost:8080/subscribers/5e8778be58d52d22d44dcf80
+Content-Type: application/json
+
+
+{
+    "name": "SkyLine"
+}
